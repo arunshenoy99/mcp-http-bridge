@@ -5,13 +5,13 @@ A generic STDIO-to-HTTP bridge for [Model Context Protocol (MCP)](https://modelc
 ## Installation
 
 ```bash
-npm install -g @anthropic/mcp-http-bridge
+npm install -g @arunshenoy99/mcp-http-bridge
 ```
 
 Or use directly with npx:
 
 ```bash
-npx @anthropic/mcp-http-bridge
+npx @arunshenoy99/mcp-http-bridge
 ```
 
 ## Features
@@ -57,7 +57,7 @@ Add to your Cursor MCP settings (`~/.cursor/mcp.json`):
   "mcpServers": {
     "my-wordpress": {
       "command": "npx",
-      "args": ["-y", "@anthropic/mcp-http-bridge"],
+      "args": ["-y", "@arunshenoy99/mcp-http-bridge"],
       "env": {
         "MCP_ENDPOINT": "https://my-site.com/wp-json/blu/mcp",
         "CUSTOM_HEADERS": "{\"Mcp-Session-Id\": \"your-session-id-here\"}"
@@ -76,7 +76,7 @@ Add to your Claude Desktop config (`~/Library/Application Support/Claude/claude_
   "mcpServers": {
     "my-server": {
       "command": "npx",
-      "args": ["-y", "@anthropic/mcp-http-bridge"],
+      "args": ["-y", "@arunshenoy99/mcp-http-bridge"],
       "env": {
         "MCP_ENDPOINT": "https://api.example.com/mcp",
         "CUSTOM_HEADERS": "{\"Authorization\": \"Bearer your-token\"}"
@@ -95,7 +95,7 @@ Add to your Claude Desktop config (`~/Library/Application Support/Claude/claude_
   "mcpServers": {
     "wordpress": {
       "command": "npx",
-      "args": ["-y", "@anthropic/mcp-http-bridge"],
+      "args": ["-y", "@arunshenoy99/mcp-http-bridge"],
       "env": {
         "MCP_ENDPOINT": "https://your-site.com/wp-json/blu/mcp",
         "CUSTOM_HEADERS": "{\"Mcp-Session-Id\": \"abc123-session-id\"}"
@@ -112,7 +112,7 @@ Add to your Claude Desktop config (`~/Library/Application Support/Claude/claude_
   "mcpServers": {
     "my-api": {
       "command": "npx",
-      "args": ["-y", "@anthropic/mcp-http-bridge"],
+      "args": ["-y", "@arunshenoy99/mcp-http-bridge"],
       "env": {
         "MCP_ENDPOINT": "https://api.example.com/mcp",
         "CUSTOM_HEADERS": "{\"Authorization\": \"Basic dXNlcm5hbWU6cGFzc3dvcmQ=\"}"
@@ -129,7 +129,7 @@ Add to your Claude Desktop config (`~/Library/Application Support/Claude/claude_
   "mcpServers": {
     "debug-server": {
       "command": "npx",
-      "args": ["-y", "@anthropic/mcp-http-bridge"],
+      "args": ["-y", "@arunshenoy99/mcp-http-bridge"],
       "env": {
         "MCP_ENDPOINT": "https://api.example.com/mcp",
         "MCP_DEBUG": "true"
@@ -160,7 +160,7 @@ Add to your Claude Desktop config (`~/Library/Application Support/Claude/claude_
 Set `MCP_DEBUG=true` to see detailed logs in stderr:
 
 ```bash
-MCP_ENDPOINT="https://example.com/mcp" MCP_DEBUG=true npx @anthropic/mcp-http-bridge
+MCP_ENDPOINT="https://example.com/mcp" MCP_DEBUG=true npx @arunshenoy99/mcp-http-bridge
 ```
 
 ### Common Issues
