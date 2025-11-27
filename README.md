@@ -16,11 +16,11 @@ npx @anthropic/mcp-http-bridge
 
 ## Features
 
-- 🔌 Bridges STDIO-based MCP clients to HTTP endpoints
-- 🔐 Supports custom headers for authentication (API keys, session tokens, etc.)
-- 🌐 Works with both HTTP and HTTPS endpoints
-- 🐛 Debug mode for troubleshooting
-- 📦 Zero dependencies - uses only Node.js built-ins
+- Bridges STDIO-based MCP clients to HTTP endpoints
+- Supports custom headers for authentication (API keys, session tokens, etc.)
+- Works with both HTTP and HTTPS endpoints
+- Debug mode for troubleshooting
+- Zero dependencies - uses only Node.js built-ins
 
 ## Configuration
 
