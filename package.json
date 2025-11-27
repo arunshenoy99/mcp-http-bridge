@@ -1,0 +1,42 @@
+{
+  "name": "@arunshenoy99/mcp-http-bridge",
+  "version": "1.0.0",
+  "description": "A generic STDIO-to-HTTP bridge for Model Context Protocol (MCP) servers. Connects STDIO-based MCP clients to HTTP-based MCP endpoints.",
+  "type": "module",
+  "main": "bin/mcp-http-bridge.mjs",
+  "bin": {
+    "mcp-http-bridge": "bin/mcp-http-bridge.mjs"
+  },
+  "scripts": {
+    "start": "node bin/mcp-http-bridge.mjs"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "stdio",
+    "http",
+    "bridge",
+    "wordpress",
+    "cursor",
+    "claude"
+  ],
+  "author": "Arun Shenoy <devarunshenoy99@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arunshenoy99/mcp-http-bridge.git"
+  },
+  "bugs": {
+    "url": "https://github.com/arunshenoy99/mcp-http-bridge/issues"
+  },
+  "homepage": "https://github.com/arunshenoy99/mcp-http-bridge#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "bin/",
+    "README.md",
+    "LICENSE"
+  ]
+}
+
