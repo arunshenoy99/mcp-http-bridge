@@ -172,7 +172,26 @@ rl.on('line', (line) => {
 
       if (res.statusCode >= 200 && res.statusCode < 300) {
         // Success - output the response directly for the MCP client
-        console.log(data);
+        // Trim whitespace and ensure we have valid content
+        const trimmedData = data.trim();
+        
+        if (!trimmedData) {
+          debug('Empty response received, skipping');
+          return;
+        }
+
+        // Handle potential multiple JSON objects (newline-delimited)
+        const lines = trimmedData.split('\n').filter(line => line.trim());
+        
+        for (const line of lines) {
+          // Validate it's valid JSON before sending
+          try {
+            JSON.parse(line);
+            console.log(line);
+          } catch (e) {
+            debug('Invalid JSON in response line:', line.substring(0, 100), e.message);
+          }
+        }
       } else {
         // HTTP error - wrap in JSON-RPC error
         sendError(
