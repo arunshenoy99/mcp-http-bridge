@@ -1,7 +1,7 @@
 {
   "name": "@arunshenoy99/mcp-http-bridge",
-  "version": "1.0.3",
-  "description": "A generic STDIO-to-HTTP bridge for Model Context Protocol (MCP) servers. Connects STDIO-based MCP clients to HTTP-based MCP endpoints.",
+  "version": "1.1.0",
+  "description": "A production-ready STDIO-to-HTTP bridge for Model Context Protocol (MCP) servers with automatic JWT authentication and session management. Connects STDIO-based MCP clients to HTTP-based MCP endpoints.",
   "type": "module",
   "main": "bin/mcp-http-bridge.mjs",
   "bin": {
